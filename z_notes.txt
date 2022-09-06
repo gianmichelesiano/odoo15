@@ -1,0 +1,29 @@
+link of resources:
+https://linuxhint.com/install-odoo-15-ubuntu-22-04/
+_________________________________________________________________
+sudo apt-get install libssl1.1 -y
+this line replace with:
+
+Go tohttp://archive.ubuntu.com/ubuntu/pool/main/o/openssl
+find the exact version of libssl for example libssl1.1.1
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1-1ubuntu2.1\~18.04.20_amd64.deb
+Then install
+sudo dpkg -i libssl1.1_1.1.1-1ubuntu2.1~18.04.20_amd64.deb
+_________________________________________________________________
+To run
+change user
+su - odoo15
+
+user: odoo15
+pass:odoo15
+
+cd /opt/odoo15/
+source myodoo15-venv/bin/activate
+cd odoo/
+./odoo-bin
+
+master-pass:
+Wolfgang-75
+
+db database:
+Wolfgang-75
