@@ -25,5 +25,8 @@ cd odoo/
 master-pass:
 Wolfgang-75
 
+conf:-c /home/gio/odoo15/odoo15/conf/my.conf
+
 db database:
+db name: speats
 Wolfgang-75
