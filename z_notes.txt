@@ -3,7 +3,7 @@ sudo service postgresql start
 link of resources:
 https://linuxhint.com/install-odoo-15-ubuntu-22-04/
 ____________________________________________________________________
-sudo apt-get install libssl1.1 -y
+sudo apt-get install libssl1.1 -y0
 this line replace with:
 
 Go tohttp://archive.ubuntu.com/ubuntu/pool/main/o/openssl
@@ -16,17 +16,22 @@ To run
 change user
 su - odoo15
 
+
 user: odoo15
 pass:odoo15
 
 cd /opt/odoo15/
 source myodoo15-venv/bin/activate
 cd odoo/
-./odoo-bin
+just run button on top pycharm
+or odoo-bin -c conf/my.conf
+
+se errore postgres:
+sudo service postgresql restart
+or
 
 master-pass:
 Wolfgang-75
-
 conf:-c /home/gio/odoo15/odoo15/conf/my.conf
 
 db database:
